@@ -1,0 +1,14 @@
+# R history files
+*.Rhistory
+
+# R data files
+*.RData
+
+# macOS system files
+.DS_Store
+
+# R Markdown files
+*.Rmd
+
+# Temporary files
+*.tmp

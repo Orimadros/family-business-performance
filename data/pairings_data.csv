@@ -1,0 +1,193 @@
+,pair_id,ticker,company,country,sector,type
+0,2,RHC.AX,RAMSAY HEALTH CARE LTD,Australia,Health Care,Family
+1,2,EBO.NZ,EBOS GROUP LTD,Australia,Health Care,Non-Family
+2,3,SVW.AX,SEVEN GROUP HOLDINGS LTD,Australia,Industrials,Family
+3,3,LLC.AX,LENDLEASE GROUP,Australia,Industrials,Non-Family
+4,5,MMK.VI,MAYR-MELNHOF KARTON AG,Austria,Materials,Family
+5,5,WIE.VI,WIENERBERGER AG,Austria,Materials,Non-Family
+6,18,GGBR4.SA,GERDAU SA-PREF,Brazil,Materials,Family
+7,18,GOAU4.SA,METALURGICA GERDAU SA-PREF,Brazil,Materials,Non-Family
+8,19,CSNA3.SA,CIA SIDERURGICA NACIONAL SA,Brazil,Materials,Family
+9,19,USIM5.SA,USINAS SIDER MINAS GER-PF A,Brazil,Materials,Non-Family
+10,21,RCI-B.TO,ROGERS COMMUNICATIONS INC-B,Canada,Communications,Family
+11,21,T.TO,TELUS CORP,Canada,Communications,Non-Family
+12,23,ATD.TO,ALIMENTATION COUCHE-TARD INC,Canada,Consumer Staples,Family
+13,23,L.TO,LOBLAW COMPANIES LTD,Canada,Consumer Staples,Non-Family
+14,24,EMP-A.TO,EMPIRE CO LTD 'A',Canada,Consumer Staples,Family
+15,24,MRU.TO,METRO INC/CN,Canada,Consumer Staples,Non-Family
+16,28,BBD-B.TO,BOMBARDIER INC-B,Canada,Industrials,Family
+17,28,FTT.TO,FINNING INTERNATIONAL INC,Canada,Industrials,Non-Family
+18,30,CFP.TO,CANFOR CORP,Canada,Materials,Family
+19,30,MX.TO,METHANEX CORP,Canada,Materials,Non-Family
+20,32,GIB,CGI INC,Canada,Technology,Family
+21,32,CLS.TO,CELESTICA INC,Canada,Technology,Non-Family
+22,34,COPEC.SN,EMPRESAS COPEC SA,Chile,Energy,Family
+23,34,ANTARCHILE.SN,ANTARCHILE SA,Chile,Energy,Non-Family
+24,37,ANTO.L,ANTOFAGASTA PLC,Chile,Materials,Family
+25,37,SQM-B.SN,SOC QUIMICA Y MINERA CHILE-B,Chile,Materials,Non-Family
+26,77,MAERSK-B.CO,AP MOLLER-MAERSK A/S-B,Denmark,Industrials,Family
+27,77,DSV.CO,DSV A/S,Denmark,Industrials,Non-Family
+28,81,MC.PA,LVMH MOET HENNESSY LOUIS VUI,France,Consumer Discretionary,Family
+29,81,CDI.PA,CHRISTIAN DIOR SE,France,Consumer Discretionary,Non-Family
+30,82,KER.PA,KERING,France,Consumer Discretionary,Family
+31,82,ML.PA,MICHELIN (CGDE),France,Consumer Discretionary,Non-Family
+32,85,OR.PA,L'OREAL,France,Consumer Staples,Family
+33,85,RI.PA,PERNOD RICARD SA,France,Consumer Staples,Non-Family
+34,86,CO.PA,CASINO GUICHARD PERRACHON,France,Consumer Staples,Family
+35,86,RAL.PA,RALLYE SA,France,Consumer Staples,Non-Family
+36,87,MF.PA,WENDEL,France,Financials,Family
+37,87,RF.PA,EURAZEO SE,France,Financials,Non-Family
+38,89,SW.PA,SODEXO SA,France,Industrials,Family
+39,89,FGR.PA,EIFFAGE,France,Industrials,Non-Family
+40,93,ERA.PA,ERAMET,France,Materials,Family
+41,93,VK.PA,VALLOUREC SA,France,Materials,Non-Family
+42,94,SOP.PA,SOPRA STERIA GROUP,France,Technology,Family
+43,94,VANTI.PA,VANTIVA SA,France,Technology,Non-Family
+44,96,VOW3.DE,VOLKSWAGEN AG,Germany,Consumer Discretionary,Family
+45,96,MBG.DE,MERCEDES-BENZ GROUP AG,Germany,Consumer Discretionary,Non-Family
+46,97,CON.DE,CONTINENTAL AG,Germany,Consumer Discretionary,Family
+47,97,ADS.DE,ADIDAS AG,Germany,Consumer Discretionary,Non-Family
+48,98,CEC.DE,CECONOMY AG,Germany,Consumer Discretionary,Family
+49,98,TUI1.DE,TUI AG,Germany,Consumer Discretionary,Non-Family
+50,100,SIX2.DE,SIXT SE,Germany,Consumer Discretionary,Family
+51,100,BOSS.DE,HUGO BOSS AG -ORD,Germany,Consumer Discretionary,Non-Family
+52,101,HEN3.DE,HENKEL AG & CO KGAA VOR-PREF,Germany,Consumer Staples,Family
+53,101,BEI.DE,BEIERSDORF AG,Germany,Consumer Staples,Non-Family
+54,103,DRW3.DE,DRAEGERWERK AG - PREF,Germany,Health Care,Family
+55,103,FME.DE,FRESENIUS MEDICAL CARE AG,Germany,Health Care,Non-Family
+56,105,JUN3.DE,JUNGHEINRICH - PRFD,Germany,Industrials,Family
+57,105,DUE.DE,DUERR AG,Germany,Industrials,Non-Family
+58,107,KSB.DE,KSB SE & CO KGAA,Germany,Industrials,Family
+59,107,HDD.DE,HEIDELBERGER DRUCKMASCHINEN,Germany,Industrials,Non-Family
+60,113,0142.HK,FIRST PACIFIC CO,Hong Kong,Consumer Staples,Family
+61,113,D01.SI,DFI RETAIL GROUP HOLDINGS LT,Hong Kong,Consumer Staples,Non-Family
+62,120,0017.HK,NEW WORLD DEVELOPMENT,Hong Kong,Real Estate,Family
+63,120,0123.HK,YUEXIU PROPERTY CO LTD,Hong Kong,Real Estate,Non-Family
+64,129,RELIANCE.NS,RELIANCE INDUSTRIES LTD,India,Energy,Family
+65,129,ONGC.NS,OIL & NATURAL GAS CORP LTD,India,Energy,Non-Family
+66,132,SUNPHARMA.NS,SUN PHARMACEUTICAL INDUS,India,Health Care,Family
+67,132,DRREDDY.NS,DR. REDDY'S LABORATORIES,India,Health Care,Non-Family
+68,149,9983.T,FAST RETAILING CO LTD,Japan,Consumer Discretionary,Family
+69,149,6902.T,DENSO CORP,Japan,Consumer Discretionary,Non-Family
+70,170,GNP.MX,GRUPO NACIONAL PROVINCIAL SA,Mexico,Financials,Family
+71,170,GFINBURO.MX,GRUPO FINANCIERO INBURSA-O,Mexico,Financials,Non-Family
+72,176,FER.MC,FERROVIAL SE,Netherlands,Industrials,Family
+73,176,WKL.AS,WOLTERS KLUWER,Netherlands,Industrials,Non-Family
+74,182,000270.KS,KIA CORP,South Korea,Consumer Discretionary,Family
+75,182,012330.KS,HYUNDAI MOBIS CO LTD,South Korea,Consumer Discretionary,Non-Family
+76,190,000720.KS,HYUNDAI ENGINEERING & CONST,South Korea,Industrials,Family
+77,190,009540.KS,HD KOREA SHIPBUILDING & OFFS,South Korea,Industrials,Non-Family
+78,191,006260.KS,LS CORP,South Korea,Industrials,Family
+79,191,001120.KS,LX INTERNATIONAL CORP,South Korea,Industrials,Non-Family
+80,192,012630.KS,HDC HOLDINGS CO LTD,South Korea,Industrials,Family
+81,192,001250.KS,GS GLOBAL CORP,South Korea,Industrials,Non-Family
+82,196,004800.KS,HYOSUNG CORPORATION,South Korea,Technology,Family
+83,196,009150.KS,SAMSUNG ELECTRO-MECHANICS CO,South Korea,Technology,Non-Family
+84,197,015760.KS,KOREA ELECTRIC POWER CORP,South Korea,Utilities,Family
+85,197,036460.KS,KOREA GAS CORPORATION,South Korea,Utilities,Non-Family
+86,203,HM-B.ST,HENNES & MAURITZ AB-B SHS,Sweden,Consumer Discretionary,Family
+87,203,VOLV-B.ST,VOLVO CAR AB-B,Sweden,Consumer Discretionary,Non-Family
+88,205,CFR.SW,CIE FINANCIERE RICHEMO-A REG,Switzerland,Consumer Discretionary,Family
+89,205,GEBN.SW,GEBERIT AG-REG,Switzerland,Consumer Discretionary,Non-Family
+90,207,ROG.SW,ROCHE HOLDING AG-GENUSSCHEIN,Switzerland,Health Care,Family
+91,207,NOVN.SW,NOVARTIS AG-REG,Switzerland,Health Care,Non-Family
+92,210,SUN.SW,SULZER AG-REG,Switzerland,Industrials,Family
+93,210,DOKA.SW,DORMAKABA HOLDING AG,Switzerland,Industrials,Non-Family
+94,211,STLN.SW,SWISS STEEL HOLDING AG,Switzerland,Materials,Family
+95,211,CLN.SW,CLARIANT AG-REG,Switzerland,Materials,Non-Family
+96,213,2603.TW,EVERGREEN MARINE CORP LTD,Taiwan,Industrials,Family
+97,213,2609.TW,YANG MING MARINE TRANSPORT,Taiwan,Industrials,Non-Family
+98,214,1326.TW,FORMOSA CHEMICALS & FIBRE,Taiwan,Materials,Family
+99,214,2002.TW,CHINA STEEL CORP,Taiwan,Materials,Non-Family
+100,221,ABF.L,ASSOCIATED BRITISH FOODS PLC,United Kingdom,Consumer Discretionary,Family
+101,221,KGF.L,KINGFISHER PLC,United Kingdom,Consumer Discretionary,Non-Family
+102,224,CMCSA,COMCAST CORP-CLASS A,United States,Communications,Family
+103,224,T,AT&T INC,United States,Communications,Non-Family
+104,232,NKE,NIKE INC -CL B,United States,Consumer Discretionary,Family
+105,232,MCD,MCDONALD'S CORP,United States,Consumer Discretionary,Non-Family
+106,233,LEN,LENNAR CORP-A,United States,Consumer Discretionary,Family
+107,233,DHI,DR HORTON INC,United States,Consumer Discretionary,Non-Family
+108,234,LAD,LITHIA MOTORS INC,United States,Consumer Discretionary,Family
+109,234,AN,AUTONATION INC,United States,Consumer Discretionary,Non-Family
+110,235,MAR,MARRIOTT INTERNATIONAL -CL A,United States,Consumer Discretionary,Family
+111,235,AZO,AUTOZONE INC,United States,Consumer Discretionary,Non-Family
+112,236,GAP,GAP INC/THE,United States,Consumer Discretionary,Family
+113,236,THO,THOR INDUSTRIES INC,United States,Consumer Discretionary,Non-Family
+114,245,COLM,COLUMBIA SPORTSWEAR CO,United States,Consumer Discretionary,Family
+115,245,BYD,BOYD GAMING CORP,United States,Consumer Discretionary,Non-Family
+116,246,WMT,WALMART INC,United States,Consumer Staples,Family
+117,246,COST,COSTCO WHOLESALE CORP,United States,Consumer Staples,Non-Family
+118,248,EL,ESTEE LAUDER COMPANIES-CL A,United States,Consumer Staples,Family
+119,248,MO,ALTRIA GROUP INC,United States,Consumer Staples,Non-Family
+120,249,HRL,HORMEL FOODS CORP,United States,Consumer Staples,Family
+121,249,K,KELLANOVA,United States,Consumer Staples,Non-Family
+122,250,SEB,SEABOARD CORP,United States,Consumer Staples,Family
+123,250,CASY,CASEY'S GENERAL STORES INC,United States,Consumer Staples,Non-Family
+124,251,TAP,MOLSON COORS BEVERAGE CO - B,United States,Consumer Staples,Family
+125,251,CAG,CONAGRA BRANDS INC,United States,Consumer Staples,Non-Family
+126,254,CPB,CAMPBELL SOUP CO,United States,Consumer Staples,Family
+127,254,SJM,JM SMUCKER CO/THE,United States,Consumer Staples,Non-Family
+128,258,WMK,WEIS MARKETS INC,United States,Consumer Staples,Family
+129,258,PSMT,PRICESMART INC,United States,Consumer Staples,Non-Family
+130,259,BF-B,BROWN-FORMAN CORP-CLASS B,United States,Consumer Staples,Family
+131,259,MKC,MCCORMICK & CO-NON VTG SHRS,United States,Consumer Staples,Non-Family
+132,260,EPD,ENTERPRISE PRODUCTS PARTNERS,United States,Energy,Family
+133,260,OXY,OCCIDENTAL PETROLEUM CORP,United States,Energy,Non-Family
+134,261,BRK-B,BERKSHIRE HATHAWAY INC-CL A,United States,Financials,Family
+135,261,JPM,JPMORGAN CHASE & CO,United States,Financials,Non-Family
+136,262,IEP,ICAHN ENTERPRISES LP,United States,Financials,Family
+137,262,L,LOEWS CORP,United States,Financials,Non-Family
+138,263,BEN,FRANKLIN RESOURCES INC,United States,Financials,Family
+139,263,AFG,AMERICAN FINANCIAL GROUP INC,United States,Financials,Non-Family
+140,265,ERIE,ERIE INDEMNITY COMPANY-CL A,United States,Financials,Family
+141,265,NLY,ANNALY CAPITAL MANAGEMENT IN,United States,Financials,Non-Family
+142,266,UHS,UNIVERSAL HEALTH SERVICES-B,United States,Health Care,Family
+143,266,HSIC,HENRY SCHEIN INC,United States,Health Care,Non-Family
+144,267,BIO,BIO-RAD LABORATORIES-A,United States,Health Care,Family
+145,267,TFX,TELEFLEX INC,United States,Health Care,Non-Family
+146,268,PCAR,PACCAR INC,United States,Industrials,Family
+147,268,CMI,CUMMINS INC,United States,Industrials,Non-Family
+148,269,RSG,REPUBLIC SERVICES INC,United States,Industrials,Family
+149,269,EMR,EMERSON ELECTRIC CO,United States,Industrials,Non-Family
+150,270,KNX,KNIGHT-SWIFT TRANSPORTATION,United States,Industrials,Family
+151,270,RHI,ROBERT HALF INC,United States,Industrials,Non-Family
+152,272,UHAL,U-HAUL HOLDING CO,United States,Industrials,Family
+153,272,SNA,SNAP-ON INC,United States,Industrials,Non-Family
+154,274,KELYA,KELLY SERVICES INC -A,United States,Industrials,Family
+155,274,YELLQ,YELLOW CORP,United States,Industrials,Non-Family
+156,275,MSM,MSC INDUSTRIAL DIRECT CO-A,United States,Industrials,Family
+157,275,FLS,FLOWSERVE CORP,United States,Industrials,Non-Family
+158,279,ORCL,ORACLE CORP,United States,Technology,Family
+159,279,QCOM,QUALCOMM INC,United States,Technology,Non-Family
+160,281,VSH,VISHAY INTERTECHNOLOGY INC,United States,Technology,Family
+161,281,VYX,NCR VOYIX CORP,United States,Technology,Non-Family
+162,293,UHR.SW,SWATCH GROUP AG/THE-BR,Switzerland,Consumer Discretionary,Family
+163,293,BBWI,BATH & BODY WORKS INC,United States,Consumer Discretionary,Non-Family
+164,296,CPF.BK,CHAROEN POKPHAND FOODS PUB,Thailand,Consumer Staples,Family
+165,296,PPC,PILGRIM'S PRIDE CORP,United States,Consumer Staples,Non-Family
+166,299,UNBL.PA,UNIBEL,France,Consumer Staples,Family
+167,299,MFI.TO,MAPLE LEAF FOODS INC,Canada,Consumer Staples,Non-Family
+168,301,WN.TO,WESTON (GEORGE) LTD,Canada,Consumer Staples,Family
+169,301,SBRY.L,SAINSBURY (J) PLC,United Kingdom,Consumer Staples,Non-Family
+170,306,SAP.TO,SAPUTO INC,Canada,Consumer Staples,Family
+171,306,0322.HK,TINGYI (CAYMAN ISLN) HLDG CO,China,Consumer Staples,Non-Family
+172,308,GRUMAB.MX,GRUMA S.A.B.-B,Mexico,Consumer Staples,Family
+173,308,PPH,PEPKOR HOLDINGS LTD,South Africa,Consumer Staples,Non-Family
+174,315,UCB.BR,UCB SA,Belgium,Health Care,Family
+175,315,HOLX,HOLOGIC INC,United States,Health Care,Non-Family
+176,326,000150.KS,DOOSAN CO LTD,South Korea,Industrials,Family
+177,326,000626.SZ,GRAND INDUSTRIAL HOLDING G-A,China,Industrials,Non-Family
+178,329,ORBIA.MX,ORBIA ADVANCE CORP SAB DE CV,Mexico,Materials,Family
+179,329,ACX.MC,ACERINOX SA,Spain,Materials,Non-Family
+180,330,SCC.BK,SIAM CEMENT PCL/THE,Thailand,Materials,Family
+181,330,000708.SZ,CITI PACIFIC SPECIAL STEE-A,China,Materials,Non-Family
+182,333,1303.TW,NAN YA PLASTICS CORP,Taiwan,Materials,Family
+183,333,UPM.HE,UPM-KYMMENE OYJ,Finland,Materials,Non-Family
+184,334,ICHB.MX,INDUSTRIAS CH S.A.B.-SER B,Mexico,Materials,Family
+185,334,LUN.TO,LUNDIN MINING CORP,Canada,Materials,Non-Family
+186,340,0012.HK,HENDERSON LAND DEVELOPMENT,Hong Kong,Real Estate,Family
+187,340,SUI,SUN COMMUNITIES INC,United States,Real Estate,Non-Family
+188,344,1184.HK,SAS DRAGON HOLDINGS LTD,Hong Kong,Technology,Family
+189,344,2392.TW,CHENG UEI PRECISION INDUSTRY,Taiwan,Technology,Non-Family
+190,346,0003.HK,HONG KONG & CHINA GAS,Hong Kong,Utilities,Family
+191,346,CMS,CMS ENERGY CORP,United States,Utilities,Non-Family
