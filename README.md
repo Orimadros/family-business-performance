@@ -31,11 +31,12 @@ This script performs the following tasks:
 4. **Calculate TSR and Growth Factors**: 
    - Computes cumulative and annualized TSR for each company based on stock price data.
    - Calculates growth factors for revenue, margins, shares, and price-to-earnings ratios.
-5. **TSR Decomposition**: 
-   - Filters for companies with positive TSR and calculates contributions from revenue growth, margin growth, share count changes, and price-to-earnings changes.
-6. **Visualization**: 
+5. **Visualization**: 
+   - Generates a scatter plot comparing Annualized TSR and Revenue Growth, with points colored by family status.
+   - Divides the plot into quadrants (Value-creating growth, No growth, Value-destroying growth).
+   - Shows average ROA (2023) for each quadrant.
    - Generates waterfall plots to visualize the contributions to TSR for family and non-family companies.
-   - Saves the plots and summary statistics to the results directory.
+   - Saves all plots to the plots directory.
 
 ### `scripts/FB_analysis.R`
 This script focuses on analyzing family business data:

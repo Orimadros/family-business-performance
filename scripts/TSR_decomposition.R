@@ -159,7 +159,109 @@ company_TSR_merged <- company_TSR %>%
   inner_join(ciq_sample_unique, by = "ticker", relationship = "many-to-many")
 
 # -------------------------------
-# 5. TSR Decomposition for Positive TSR Companies
+# 5. Generate TSR vs Growth Scatter Plot (Mimicking Image)
+# -------------------------------
+
+# Calculate annualized revenue growth
+plot_data <- company_TSR_merged %>%
+  mutate(
+    # Ensure rev_growth and num_years are numeric and handle potential issues
+    rev_growth = as.numeric(rev_growth),
+    num_years = as.numeric(num_years),
+    # Calculate annualized revenue growth, handle cases where num_years is zero or NA
+    annualized_rev_growth = if_else(
+      num_years > 0 & !is.na(rev_growth),
+      (1 + rev_growth)^(1/num_years) - 1,
+      NA_real_
+    )
+  ) %>%
+  # Filter out rows with NA values needed for the plot
+  filter(!is.na(annualized_TSR) & !is.na(annualized_rev_growth))
+
+# Determine plot limits, adding some padding
+x_min <- min(plot_data$annualized_rev_growth, na.rm = TRUE) - 0.05
+x_max <- max(plot_data$annualized_rev_growth, na.rm = TRUE) + 0.05
+y_min <- min(plot_data$annualized_TSR, na.rm = TRUE) - 0.05
+y_max <- max(plot_data$annualized_TSR, na.rm = TRUE) + 0.05
+
+# Define quadrant boundaries based on image (TSR=10%, Growth=0%)
+tsr_threshold <- 0.10
+growth_threshold <- 0
+
+# Calculate average ROA for relevant quadrants
+avg_roa_value_creating <- plot_data %>%
+  filter(annualized_rev_growth > growth_threshold & annualized_TSR > tsr_threshold) %>%
+  summarise(avg_roa = mean(as.numeric(roa_2023), na.rm = TRUE)) %>%
+  pull(avg_roa)
+
+avg_roa_value_destroying <- plot_data %>%
+  filter(annualized_rev_growth > growth_threshold & annualized_TSR < tsr_threshold) %>%
+  summarise(avg_roa = mean(as.numeric(roa_2023), na.rm = TRUE)) %>%
+  pull(avg_roa)
+
+# Format the ROA strings
+roa_text_value_creating <- sprintf("AVG ROA (2023) = %.1f%%", avg_roa_value_creating)
+roa_text_value_destroying <- sprintf("AVG ROA (2023) = %.1f%%", avg_roa_value_destroying)
+
+# Create the scatter plot
+growth_tsr_scatter <- ggplot(plot_data, aes(x = annualized_rev_growth, y = annualized_TSR)) +
+  geom_point(aes(color = family), alpha = 0.7, size = 2) + # Color points by family status
+
+  # Add quadrant lines (subtler than rectangles)
+  geom_hline(yintercept = tsr_threshold, linetype = "dashed", color = "grey40") +
+  geom_vline(xintercept = growth_threshold, linetype = "dashed", color = "grey40") +
+
+  # Add quadrant defining rectangles (using plot limits)
+  # Value-creating growth (Top-Right)
+  annotate("rect", xmin = growth_threshold, xmax = x_max, ymin = tsr_threshold, ymax = y_max,
+           alpha = 0, color = "darkgreen", linetype = "dashed", size = 0.8) +
+  # No growth (Top-Left)
+  annotate("rect", xmin = x_min, xmax = growth_threshold, ymin = tsr_threshold, ymax = y_max,
+           alpha = 0, color = "#E69F00", linetype = "dashed", size = 0.8) + # Approx Yellow/Orange
+  # Value-destroying growth (Bottom-Right)
+  annotate("rect", xmin = growth_threshold, xmax = x_max, ymin = y_min, ymax = tsr_threshold,
+           alpha = 0, color = "firebrick", linetype = "dashed", size = 0.8) +
+
+  # Add quadrant labels
+  annotate("text", x = growth_threshold + 0.01, y = y_max - 0.01, # Top-left of box + offset
+           label = paste("Value-creating growth", roa_text_value_creating, sep = "\n"), # Add ROA
+           hjust = 0, vjust = 1, color = "darkgreen", size = 4, fontface = "bold", lineheight = 0.9) +
+  annotate("text", x = x_min + 0.01, y = y_max - 0.01, # Top-left of box + offset
+           label = "No growth",
+           hjust = 0, vjust = 1, color = "#E69F00", size = 4, fontface = "bold") +
+  annotate("text", x = growth_threshold + 0.01, y = y_min + 0.01, # Bottom-left of box + offset
+           label = paste("Value-destroying growth", roa_text_value_destroying, sep = "\n"), # Add ROA
+           hjust = 0, vjust = 0, color = "firebrick", size = 4, fontface = "bold", lineheight = 0.9) +
+
+  # Formatting
+  scale_x_continuous(labels = percent_format(), limits = c(x_min, x_max)) + # Reset x limit
+  scale_y_continuous(labels = percent_format(), limits = c(y_min, y_max)) +
+  scale_color_manual(values = c("Family" = "#021882", "Non-Family" = "grey60")) + # Set custom colors
+  labs(
+    title = "Correlation between Annualized TSR and Annualized Revenue Growth",
+    subtitle = paste("Based on available data (", nrow(plot_data), " companies)", sep=""),
+    x = "Average Annual Turnover Growth (%)",
+    y = "Annual TSR (%)"
+  ) +
+  theme_classic(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5, size = 11, color = "grey30"),
+    axis.title = element_text(face = "bold"),
+    plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"), # Reduce margin
+    legend.title = element_blank(), # Make legend title bold
+    legend.position = "bottom" # Move legend to bottom
+   )
+
+# Save the plot
+ggsave(here("plots", "growth_vs_tsr_scatter.png"), growth_tsr_scatter, width = 11, height = 7, dpi = 300)
+
+cat("
+Scatter plot 'growth_vs_tsr_scatter.png' saved to plots directory.
+")
+
+# -------------------------------
+# 6. TSR Decomposition for Positive TSR Companies
 # -------------------------------
 
 # Filter and calculate growth factors
@@ -340,6 +442,3 @@ waterfall_plot_nonfamily <- waterfall(waterfall_plot_data_nonfamily,
 # Save the plots
 ggsave("plots/waterfall_family_relative.png", waterfall_plot_family, width = 10, height = 6)
 ggsave("plots/waterfall_nonfamily_relative.png", waterfall_plot_nonfamily, width = 10, height = 6)
-
-# Save summary statistics
-write_csv(waterfall_data, "TSR_decomposition_summary.csv") 
